@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\argolaScript.cs">
+    <Files>
+      <File FileName="Assets\argolaScript.cs" Line="8" Column="3" />
+      <File FileName="Assets\gerenciadordePontos.cs" Line="26" Column="6" />
+      <File FileName="Assets\movimentacaoScript.cs" Line="28" Column="3" />
+      <File FileName="Assets\scripts\impulse.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\potencia.cs" Line="42" Column="3" />
+      <File FileName="Assets\movimentoBackground.cs" Line="6" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
