@@ -5,8 +5,11 @@ public class Mover : MonoBehaviour {
 
     public float speed;
 
+    Vector3 startPosition;
+
     void Start()
     {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(-5 * speed, 0), ForceMode2D.Force);
+        Vector2 movement = new Vector2(-5 * speed, 0);
+        GetComponent<Rigidbody2D>().AddForce(movement, ForceMode2D.Force);
     }
 }
