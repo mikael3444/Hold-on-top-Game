@@ -14,6 +14,7 @@ public class SpawnsPoints : MonoBehaviour {
 
     public void Spawn()
     {
+
         int spawnPointIndex = Random.Range(0, spawnPoint.Length);
 
         Instantiate(enemy, spawnPoint[spawnPointIndex].position, spawnPoint[spawnPointIndex].rotation);
