@@ -13,7 +13,7 @@ public class PlayerMove : MonoBehaviour {
         {
 
            
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Jump*Time.deltaTime), ForceMode2D.Force);
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Jump));
         }
 
     
