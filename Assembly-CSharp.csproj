@@ -50,8 +50,6 @@
      <Compile Include="Assets\scripts\Mover.cs" />
      <Compile Include="Assets\scripts\PlayerController.cs" />
      <Compile Include="Assets\scripts\SpawnsPoints.cs" />
-     <Compile Include="Assets\scripts\UpDown.cs" />
-     <Compile Include="Assets\scripts\test.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
