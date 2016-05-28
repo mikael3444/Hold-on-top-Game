@@ -5,8 +5,7 @@ public class Mover : MonoBehaviour {
 
     public float speed;
     public float timeRespaw = 1.0f;
-    public float minFly;
-    public float maxFly;
+    public float ForceImplse;
 
     void Start()
     {
@@ -17,7 +16,7 @@ public class Mover : MonoBehaviour {
 
     void Fly()
     {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range(minFly, maxFly)), ForceMode2D.Force);
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0, ForceImplse), ForceMode2D.Force);
     }
 
 }
