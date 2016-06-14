@@ -5,11 +5,14 @@ public class PlayerMove : MonoBehaviour {
     public float Jump;
     float tempo= 0;
     bool isjumped = false;
+     public float speed;
+    public float scale;
 	void Start () {
-      
+        scale = transform.localScale.x;
+        
     }
 	
-	// Update is called once per frame
+	
 	void Update () {
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -17,31 +20,37 @@ public class PlayerMove : MonoBehaviour {
 
 
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Jump));
-          
-        }
+            GetComponentInChildren<Animation>().CrossFade("JumpPlayer");
+            isjumped = true;
 
-        // se apertar W ele vira triger e para de colidir com o grifo por 0.3s fazendo assim com que
-        //o player desce do grifo depois de 0.3s triger = false
-        if (Input.GetKeyDown(KeyCode.W))
+        }
+        transform.position=new Vector2(transform.position.x+Input.GetAxis("Horizontal")*speed, transform.position.y);
+
+        if (Input.GetAxis("Horizontal")>0)
         {
 
+           GetComponent<Transform>().localScale = new Vector3(scale, scale, scale);
+            GetComponentInChildren<Animation>().CrossFade("RunPlayer");
+            isjumped = false;
 
-            GetComponent<Collider2D>().isTrigger = true;
-            isjumped = true; 
         }
 
-        if (isjumped)
+        if (Input.GetAxis("Horizontal") <0)
         {
-            tempo += Time.deltaTime; // conta o tempo
-            if (tempo>0.3f)
+            GetComponent<Transform>().localScale = new Vector3(-scale, scale, scale);
+            GetComponentInChildren<Animation>().CrossFade("RunPlayer");
+            isjumped = false;
+        }
+        if (Input.GetAxis("Horizontal") == 0)
+        {
+            if (isjumped == false)
             {
-                GetComponent<Collider2D>().isTrigger = false;
-                isjumped = false;
-                tempo = 0; //  reseta o tempo
+                GetComponentInChildren<Animation>().CrossFade("AdlePlaye");
             }
-
+            
         }
+    }
     }
 
     
-    }
+    

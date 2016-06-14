@@ -8,11 +8,11 @@ public class ColiderDetect : MonoBehaviour {
     {
         if (other.gameObject.tag == "Plataform")
         {
-            Player.GetComponent<Animator>().SetInteger("num", 1);
+           //sssssssssssssss Player.GetComponent<Animator>().SetInteger("num", 1);
         }
         if (other.gameObject.tag == "Hipogrifo")
         {
-           Player.GetComponent<Animator>().SetInteger("num", -1);
+          // Player.GetComponent<Animator>().SetInteger("num", -1);
         }
     }
 }
