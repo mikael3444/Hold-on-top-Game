@@ -117,6 +117,7 @@ ModelImporter:
     7400012: RunPlayer
     7400014: AdlePlaye
     7400016: JumpPlayer
+    7400018: ataque
     9500000: //RootNode
     11100000: //RootNode
     13700000: 1
@@ -133,6 +134,7 @@ ModelImporter:
     13700022: mao_002
     13700024: pe1
     13700026: pe1_001
+    13700028: espada_1
   materials:
     importMaterials: 1
     materialName: 0
@@ -147,7 +149,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -279,7 +281,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 1
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -393,8 +395,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 1
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -500,12 +502,12 @@ ModelImporter:
       name: JumpPlayer
       takeName: Default Take
       firstFrame: 100
-      lastFrame: 149
-      wrapMode: 2
+      lastFrame: 125
+      wrapMode: 1
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 1
+      loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
@@ -610,6 +612,120 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ataque
+      takeName: Default Take
+      firstFrame: 100
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 1
+        weight: 1
+      - path: 1_001
+        weight: 1
+      - path: 2
+        weight: 1
+      - path: 2_001
+        weight: 1
+      - path: Armature_003
+        weight: 1
+      - path: Armature_003/Bone_0
+        weight: 1
+      - path: Armature_004
+        weight: 1
+      - path: Armature_004/Armature
+        weight: 1
+      - path: Armature_004/Armature/Bone_12
+        weight: 1
+      - path: Armature_004/Armature/Bone_12/Bone_13
+        weight: 1
+      - path: Armature_004/Armature/Bone_12/Bone_13/Bone_14
+        weight: 1
+      - path: Armature_004/Armature_001
+        weight: 1
+      - path: Armature_004/Armature_001/Bone_8
+        weight: 1
+      - path: Armature_004/Armature_001/Bone_8/Bone_9
+        weight: 1
+      - path: Armature_004/Armature_001/Bone_8/Bone_9/Bone_10
+        weight: 1
+      - path: Armature_004/Armature_002
+        weight: 1
+      - path: Armature_004/Armature_002/Bone_3
+        weight: 1
+      - path: Armature_004/Armature_002/Bone_3/Bone_4
+        weight: 1
+      - path: Armature_004/Armature_002/Bone_3/Bone_4/Bone_002
+        weight: 1
+      - path: Armature_004/Armature_007
+        weight: 1
+      - path: Armature_004/Armature_007/Bone_5
+        weight: 1
+      - path: Armature_004/Armature_007/Bone_5/Bone_6
+        weight: 1
+      - path: Armature_004/Armature_007/Bone_5/Bone_6/Bone_7
+        weight: 1
+      - path: Armature_004/Bone_2
+        weight: 1
+      - path: Armature_004/Bone_2/Bone_001
+        weight: 1
+      - path: Armature_005
+        weight: 1
+      - path: Armature_005/Bone_11
+        weight: 1
+      - path: Armature_006
+        weight: 1
+      - path: Armature_006/Bone_1
+        weight: 1
+      - path: Armature_008
+        weight: 1
+      - path: Armature_008/Bone
+        weight: 1
+      - path: braco
+        weight: 1
+      - path: braco2
+        weight: 1
+      - path: braco2_002
+        weight: 1
+      - path: braco_002
+        weight: 1
+      - path: cabeca1_001
+        weight: 1
+      - path: corpo1
+        weight: 1
+      - path: espada_1
+        weight: 1
+      - path: mao
+        weight: 1
+      - path: mao_002
+        weight: 1
+      - path: pe1
+        weight: 1
+      - path: pe1_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -647,7 +763,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
